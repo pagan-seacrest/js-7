@@ -11,7 +11,7 @@ function insertList (list, parent) {
         let li = document.createElement("li");
         li.textContent = element;
         ol.append(li);
-        return liElement = li
+        return liElement = li;
     });
 
     switch (parent) {
