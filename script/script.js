@@ -2,8 +2,7 @@
 
 function insertList (list, parent) {
     let ol = document.createElement("ol");
-    let body =  document.getElementsByTagName("body")[0];
-    body.append(ol);
+    document.getElementsByTagName("body")[0].append(ol);
     
     let liElement;
 
@@ -11,7 +10,7 @@ function insertList (list, parent) {
         let li = document.createElement("li");
         li.textContent = element;
         ol.append(li);
-        return liElement = li
+        return liElement = li;
     });
 
     switch (parent) {
@@ -27,4 +26,4 @@ function insertList (list, parent) {
 const list = ["Hello User", "Hello World!", "and programmer hello too",
  "hello mom and hello dad", "here the script that's greeting you"];
 
-insertList(list, "li");
+insertList(list);
